@@ -1,10 +1,10 @@
 use indexmap::IndexMap;
-use std::fs::File;
+use std::fs::OpenOptions;
 use std::io::{self, BufRead};
 use std::path::Path;
 
 pub fn load_into_map(path: &Path) -> io::Result<IndexMap<String, bool>> {
-    let file = File::open(&path)?;
+    let file = OpenOptions::new().read(true).create(true).open(path)?;
     let reader = io::BufReader::new(file);
 
     let mut map = IndexMap::new();
