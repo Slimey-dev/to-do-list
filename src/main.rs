@@ -71,7 +71,7 @@ fn process_item(path: &Path, checked: bool, prompt_message: &str) {
     let mut map = reader::load_into_map(path).unwrap();
     let mut target = None;
     let mut i = 1;
-    for (key, _) in &mut map {
+    for (key, _) in &map {
         if i == input.parse::<usize>().unwrap() {
             target = Some(key.to_string()); // Store target key.
             break; // We found our element, so we can stop iterating.
