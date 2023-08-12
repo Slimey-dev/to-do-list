@@ -44,9 +44,9 @@ fn list(path: &Path) {
     let mut i = 1;
     for (key, value) in &map {
         if *value {
-            println!("{}. {} (completed)", i, key);
+            println!("{}. [x] {}", i, key);
         } else {
-            println!("{}. {}", i, key);
+            println!("{}. [ ] {}", i, key);
         }
         i += 1;
     }

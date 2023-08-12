@@ -39,14 +39,15 @@ Enter the item you want to add: Do the dishes
 Enter a command (help to see all commands): add
 Enter the item you want to add: Do the laundry
 Enter a command (help to see all commands): list
-1. Do the dishes
-2. Do the laundry
-Enter a command (help to see all commands): complete
+1. [ ] Do the dishes
+2. [ ] Do the laundry
+Enter a command (help to see all commands): check
 Enter the index of the item you want to check:
-1. Do the dishes
-2. Do the laundry
+1. [ ] Do the dishes
+2. [ ] Do the laundry
 1
 Enter a command (help to see all commands): list
-1. Do the laundry
+1. [x] Do the dishes
+2. [ ] Do the laundry
 Enter a command (help to see all commands): exit
 ```
