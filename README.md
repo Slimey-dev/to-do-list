@@ -10,48 +10,43 @@ mark tasks as complete.
 To run the app, clone the repository and run `cargo run` in the root directory. The app will then prompt you to enter a
 command. The commands are as follows:
 
-### not implemented yet, just mockup
-
-- `add` - Add a new task
-- `edit` - Edit an existing task
-- `delete` - Delete an existing task
-- `complete` - Mark a task as complete
-- `list` - List all tasks
-- `exit` - Exit the app
-- `help` - Display the help menu
-- `clear` - Clear the screen
-- `save` - Save the current task list to a file
-- `load` - Load a task list from a file
-- `quit` - Exit the app
+- `help` - show this message
+- `list` - show the to-do list
+- `add` - add an item to the to-do list
+- `check` - check an item on the to-do list
+- `uncheck` - uncheck an item on the to-do list
+- `remove` - remove an item from the to-do list
+- `remove completed` - remove all completed items from the to-do list
+- `quit` - quit the program
 
 ## Example
 
 ```
 $ cargo run
-Welcome to your to-do list!
-Enter a command (help to see all commands): help
-add - Add a new task
-edit - Edit an existing task
-delete - Delete an existing task
-complete - Mark a task as complete
-list - List all tasks
-exit - Exit the app
-help - Display the help menu
-clear - Clear the screen
-save - Save the current task list to a file
-load - Load a task list from a file
-quit - Exit the app
+Welcome to your to-do-list!
+Enter a command (help to see all the commands): help
+Commands:
+help - show this message
+list - show the to-do list
+add - add an item to the to-do list
+check - check an item on the to-do list
+uncheck - uncheck an item on the to-do list
+remove - remove an item from the to-do list
+remove completed - remove all completed items from the to-do list
+quit - quit the program
 Enter a command (help to see all commands): add
-Enter a task: Do the dishes
+Enter the item you want to add: Do the dishes
 Enter a command (help to see all commands): add
-Enter a task: Do the laundry
+Enter the item you want to add: Do the laundry
 Enter a command (help to see all commands): list
 1. Do the dishes
 2. Do the laundry
 Enter a command (help to see all commands): complete
-Enter the number of the task to complete: 1
+Enter the index of the item you want to check:
+1. Do the dishes
+2. Do the laundry
+1
 Enter a command (help to see all commands): list
 1. Do the laundry
 Enter a command (help to see all commands): exit
 ```
-
