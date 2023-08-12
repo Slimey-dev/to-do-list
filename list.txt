@@ -1,2 +1,2 @@
-john,false
-hello,false
+Do the dishes,true
+Do the laundry,false
